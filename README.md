@@ -239,6 +239,335 @@ Day 2: 18th July 2024
 	Create a github account.
 	
 	GITHUB is a Remote Repository for managing the files and folders.
+
+ ######################
+Day 3: 19th July 2024
+######################	
+
+
+	AWS Cloud Platform :
+	
+	Create AWS Free tier Account 
+	
+	Connect to AWS Account 
+	
+	Login to AWS Console
+	
+	Explore various AWS Services 
+	
+	Create EC2 Instances (VMs)
+	
+	Connect to EC2 Instances 
+	
+	
+	Create AWS Free tier Account :::
+
+			https://signin.aws.amazon.com/signup?request_type=register			# To Create an AWS Account 
+			
+			https://aws.amazon.com/console/										# Login to AWS Account
+			
+
+	
+	Create AWS Free tier Account ::::
+	
+		To Create AWS Account :
+			AWS Free tier Account 
+				- 12 Months 
+	
+		
+			- Active Email_ID
+			- Mobile Number 
+			- Credit/Debit Card Number (Enabled with International Transation)
+			- PAN Card Number
+			
+		Login to AWS Console as a root user using email_id.
+			https://aws.amazon.com/console/	
+			
+			
+		Upon Login to AWS Console 
+		
+			Understand AWS Dashboard
+			
+			Setup the Region - Choose the nearest region
+			
+			Choose the services from the service catalog
+			
+			EC2(Elastic Compute Cloud- VM) Service 
+			
+			
+			AWS Cloud Platform 
+			
+				IAAS 
+				Infra-Structure As Code 
+				
+				AWS Regions 			# Geographical Location where AWS Data Centers are located.
+					Availability Zones (Data Centers)
+				
+				for any AWS Region, there will be 2 avaialbility zones!
+				
+				Mumbai region - ap-south-1a, ap-south-1b
+				
+				Servers 
+				
+				
+				Telecomm service provider --- SP1 --> outlets 
+				
+				
+			
+	Create EC2 Instances (VMs)
+	
+		What is EC2 Instances ???
+		
+			It is a Computing Device/Server/Virtual Machine
+			
+		Why we need EC2 Instances/ Virtual Machine?		
+			
+			Run a Application - Java/.Net/Python 
+				Need a Computing Environment/Servers
+				
+			Create DataBase 
+				
+		Need for cloud computing ?
+		
+		AWS is one of the Cloud Service providers.
+		
+			To avail the IT Services thru internet.
+				- Server 	--> Virtual Machines 
+				- Storage 
+				- Database server 
+				- Networking
+				
+	
+		EC2 Instances :
+		
+			Create Any Number of EC2 Instances 
+			
+			Billing/Usage of the Instances!
+			
+				It is always recommended to check the billing dashboard regularly and monitor the usage.
+			
+			Pay as you use Model 
+			
+			
+			Server :
+			
+				CPU 
+				RAM 
+				Storage 
+		
+			1 EC2 Instance -- AWS provides 30GB of Storage per month 
+			
+				1 VM   ==> 750 Hrs per month
+				
+				10 VMs ==> 75 Hrs / month  --> 10 Hrs (actual usage)
+				
+			
+		Create EC2 Instances ::::
+		
+			- First Create EC2 Instances with default properties 
+			
+			
+			EC2 Instance / Virtual Machine ?
+			
+			Why to Create EC2 Instance / Virtual Machine ?
+				CPU 
+				RAM 
+				Storage 
+				
+				OS
+				
+				Run a Application - Java/.Net/Python 
+				
+				
+			EC2 Instances
+				1 CPU & 1GB of RAM  	--> Instance Type
+				
+				Operating System		--> AMI (Amazon Machine Image - Server template uset create VMs)
+				
+				
+				network
+				storage
+				
+				
+					Linux OS 
+						ubuntu 
+					Windows 
+					Mac 
+				
+				
+			Why we need VM (or) Why to Create VM ???
+			
+			
+				
+		To 	Create EC2 Instances ::::		
+				
+			1. Login to AWS Console 
+			2. Goto EC2 Dashboard by Choosing EC2 Service 
+			3. Click on Launch Instance
+			4. Enter the Name of Instance 
+			5. Choose Ubuntu v20.24 AMI 
+			6. t2.micro Instance Type
+			7. Authentication to Login to the EC2 Instance
+				- Key Based Authentication
+					- key pair 
+						Public and Private Key
+				Click on Create New Key Pair
+				On the Key Pair Dialog
+					Just Enter the Key pair Name and Create.
+				
+						
+			
+	AWS Cloud Platform :
+	
+	Create AWS Free tier Account 
+	
+	Connect to AWS Account 
+	
+	Login to AWS Console
+	
+	Explore various AWS Services 
+	
+	Create EC2 Instances (VMs)			
+			
+
+Next :
+
+	Connect to EC2 Instances 
+	
+	Used the EC2 Instances 
+	
+	AWS IAM Services 
+
+
+
+######################
+Day 4: 22nd July 2024
+######################
+
+
+	Connect to EC2 Instances 
+	
+	Used the EC2 Instances 
+	
+	AWS IAM Services
+	
+	Create EC2 Instances :
+	
+		Ubuntu Machine :
+		
+		Login to Ubuntu Machine ?
+		
+		EC2 Instance :
+		
+			Host Name : IP Address 
+			
+				Public IP Address 	==> Is Used to access the VM from external network
+										Public IP Address will change whenever we restart the EC2 Instance
+						
+				Private IP Address 	==> Is used to access the VM within the Network
+										Private IP Address will never change 
+										
+										
+				Elastic IP Address 	==> Is a static IP Address 
+										Can be assigned to VM
+	
+		2 EC2 Instances :
+		
+			VM1 & VM2 
+			
+		AWS Cloud platform ::			AZURE Cloud Platform
+		
+			EC2 Instance1					Virtual Machine1
+
+			EC2 Instance2 					Virtual Machine2
+
+
+		
+		Network Protocol 
+		
+			SSH Protocol 
+				Enable SSH(Secure SHell) Connection
+			
+				--> Host Name 			--> Public IP Address fo the Node	
+				--> User Name 			--> User_Name 	Default User Name for Ubuntu OS: ubuntu
+				--> User Credentials	--> Private Key
+				
+				
+			Key Pair :	Used to Securely connect to your instance.
+				Public Key 
+				Private Key	==> *.pem
+				
+			SSH Authentication Types :::
+			
+				Password based Authentication
+				
+				Key Based Authentication
+					Public Key 
+					Private Key	==> *.pem					
+				
+				Token Based Authentication
+				Passwordless Authentication
+				
+				
+			To Access Gmail Server :
+				Host Name : www.gmail.com 
+				User ID 
+				Password 
+				
+	Connect to EC2 Instances :::
+	
+		EC2 Instance Connect Option 		# Done through Browser Window 
+		
+		SSH Agents(Tool installed in the Local Windows Machine to connect to EC2 Instances)
+			Windows Users :
+			
+				Install MobaXterm 		#	https://mobaxterm.mobatek.net/download-home-edition.html
+		
+		Terminal (Mac/Linux/Windows Users)
+		
+		
+
+IAM Service :::
+
+	Identity and Access Management Service :
+	
+		- Used to Create User IDs 
+		- Create User Groups
+		- Define User Access Level
+		- Create User Roles & Policies to access other aws resources 
+		
+		
+		root user 	- Complete Access to AWS Resources
+		
+		Infra-Structure Management Team 
+		
+		dev user 	- Wants to create EC2 Instance ?
+		Testing Teams 
+		
+		
+		
+
+	How to access AWS Console as a IAM User ?
+	
+	
+	AWS ACCOUNT :
+	
+		root user account			# Default Account with full Administrator/Owner Access!
+									# This will be at the Enterprise level
+									# Using Email_ID and Password we can login.
+	
+	
+		Dev_Team 					# User1 & Password and allow them to access the AWS Console with limited access.
+		
+		Testing Team 
+		
+		Infra-Structure Mgmt Team	
+		
+		
+		
+	AWS Console :
+	
+		root user 				# Admin User
 		
 		
 	
